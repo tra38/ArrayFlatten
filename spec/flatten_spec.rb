@@ -36,5 +36,12 @@ RSpec.describe ArrayFlatten, "#flatten" do
       actual_output = ArrayFlatten.flatten(input)
       expect(actual_output).to eq expected_output
     end
+
+    it "handles flattening empty arrays" do
+      input = [1,2,3,4,5,[],6]
+      expected_output = [1,2,3,4,5,6]
+      actual_output = ArrayFlatten.flatten(input)
+      expect(actual_output).to eq expected_output
+    end
   end
 end
