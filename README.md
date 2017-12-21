@@ -6,7 +6,7 @@ A module designed to flatten arrays. Written as part of a coding challenge.
 ```git clone``` the repository and then create a file.
 
 ```ruby
-require_relative path/to/flatten.rb
+require_relative "path/to/flatten.rb"
 
 array_to_flatten = [1,2,3,[4,5],6]
 
